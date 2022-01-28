@@ -1,0 +1,241 @@
+<style>
+    body {
+        background-color: 10101A;
+        color: white;
+        font-family: 'HK Grotesk',  sans-serif;
+        text-align: center;
+        margin: 0;
+    }
+    h1 {
+        font-weight: 400;
+        font-size: 50;
+    }
+    h2 {
+        font-size: 36;
+        font-weight: 400;
+        text-align: left;
+        margin-left: 5%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        color: DAFF00;
+    }
+    h3 {
+        font-size: 36;
+        font-weight: 400;
+        text-align: center;
+    }
+    h4 {
+        font-size: 80;
+        font-weight: 400;
+        text-align: left;
+        padding-left: 5%;
+    }
+    h5 {
+        font-size: 18;
+        font-weight: 400;
+    }
+    .submit {
+        background-color: DAFF00;
+        border: none;
+        color: black;
+        font-family: 'HK Grotesk',  sans-serif;
+        padding: 15px 15px;
+        text-align: center;
+        font-size: 16px;
+        margin-top: 1.5%;
+        float: right;
+        position: relative;
+        left: 198px;
+        top: -73px;
+    }
+    .input {
+        border: none;
+        color: black;
+        font-family: 'HK Grotesk',  sans-serif;
+        padding: 15px 15px;
+        font-size: 16px;
+        width: 37%;
+        margin-top: 1.5%;
+        float: left;
+    }
+    .desc {
+        color: white;
+        font-size: 24px;
+        font-weight: 300;
+    }
+    .images1 {
+        text-align: left;
+        width: 100%;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .images2 {
+        text-align: left;
+        width: 100%;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .pic {
+        margin-left: 0;
+        margin-right: 2.97%;
+    }
+    .cards{
+        text-align: left;
+    }
+    .card {
+        text-align: left;
+        width: 15%;
+        font-size: 18px;
+        display: inline-block;    
+        vertical-align: top;
+        margin-left: 5%;
+        margin-right: 10%;
+        margin-bottom: 5%;
+    }
+    .card-center {
+        text-align: left;
+        width: 15%;
+        font-size: 18px;
+        display: inline-block;    
+        vertical-align: top;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-bottom: 5%;
+    }
+    .card-right {
+        text-align: left;
+        width: 15%;
+        font-size: 18px;
+        display: inline-block;    
+        vertical-align: top;
+        margin-left: 10%;
+        margin-right: 5%;
+        margin-bottom: 5%;
+    }
+    .card_desc {
+        font-size: 16px;
+    }
+    .social img {
+        vertical-align: middle;
+        margin: 0.25%;
+    }
+    .intro{
+        float: left;
+        width: 22%;
+        text-align: left;
+        padding-left: 5%;
+        padding-right: 6%;
+    }
+    .title{
+        width: 70%;
+        text-align: left;
+        line-height: 550%;
+    }
+    .join{
+        float: right;
+        margin-right: 10%;
+        position: relative;
+        top: -300px;
+    }   
+</style>
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/hk-grotesk.min.css"> 
+</head>
+<body>
+    <h2>Modal</h2>
+    <div class="intro">
+        <hr color="DAFF00">
+        <!-- <p class="desc">Join a one of a kind community with a passion for fashion. The one and only home for fashion on the internet.</p> -->
+        <p class="desc" style="font-size: 32;">Ask or give fashion advice, weigh in on the latest runway show, or discuss the latest topics shaking up the fashion world. Sign up for the waitlist today.</p>
+    </div>
+    <div class="title-group">
+        <div class="title">
+            <h1>Join the first collaborative fashion space for women.</h1>
+        </div>
+        <div class="join">
+            <img src="join2.png" alt="image">
+        </div>
+    </div>
+    <div class='form'>
+        <form method="POST" action="/signup">
+            <input class="input" type="text" id="email" name="email" placeholder="Enter your email">
+            <input class="submit" type="submit" id="submit" value="Join the waitlist">
+        </form>
+    </div>
+    <br><br><br><br>
+    <div class="images1">
+        <img class="pic" src="/Images/image 66.png" alt="image">
+        <img class="pic" src="/Images/image 64.png" alt="image">
+        <img class="pic" src="/Images/image 69.png" alt="image">
+        <img class="pic" src="/Images/image 72.png" alt="image">
+        <img class="pic" src="/Images/image 71.png" alt="image">
+    </div>
+    <br><br>
+    <div class="images2">
+        <img class="pic" src="/Images/image 70.png" alt="image">
+        <img class="pic" src="/Images/image 61.png" alt="image">
+        <img class="pic" src="/Images/image 67.png" alt="image">
+        <img class="pic" src="/Images/image 68.png" alt="image">
+        <img class="pic" src="/Images/image 65.png" alt="image">
+    </div>
+    <br><br>
+    <h4>ABOUT US</h4>
+    <div class="cards">
+        <div class="card">
+            <img src="search2.png" alt="image">
+            <h5>FASHION DATABASE</h5>
+            <p class="card_desc">
+                Search for fashion information easily with a categorized, comprehensive, updated, and accessible database.
+            </p>
+        </div>
+        <div class="card-center">
+            <img src="lightbulb2.png" alt="image">
+            <h5>LATEST TRENDS</h5>
+            <p class="card_desc">
+                Stay up to date on latest trends and news. Be ahead of the curve on brands, sustainability, and informed shopping.
+            </p>
+        </div>
+        <div class="card-right">
+            <img src="world2.png" alt="image">
+            <h5>DISCOVER CONTENT</h5>
+            <p class="card_desc">
+                Browse new fashion content from users all around the world. Enjoy an endless stream of exciting, trending posts.
+            </p>
+        </div>
+        <div class="card">
+            <img src="pen2.png" alt="image">
+            <h5>CREATE FASHION CONTENT</h5>
+            <p class="card_desc">
+                Easily publish your own outfit pictures, questions, or fashion articles to share with the world.
+            </p>
+        </div>
+        <div class="card-center">
+            <img src="chat2.png" alt="image">
+            <h5>DISCUSS FASHION</h5>
+            <p class="card_desc">
+                Ask or give fashion advice, weigh in on the latest runway show, or discuss the latest topics shaking up the fashion world.
+            </p>
+        </div>
+        <div class="card-right">
+            <img src="people2.png" alt="image">
+            <h5>BE PART OF A COMMUNITY</h5>
+            <p class="card_desc">
+                Join a one of a kind community with a passion for fashion. The one and only home for fashion on the internet.
+            </p>
+        </div>
+    </div>
+    <br><br><br>
+    <h3>Connect with us</h3>
+    <div class="social">
+        <a href="https://www.facebook.com/jonthan.chen">
+            <img src="twitter.png" alt="image">
+        </a>
+        <a href="https://www.facebook.com/jonthan.chen">
+            <img src="instagram.png" alt="image">
+        </a>
+        <a href="https://www.facebook.com/jonthan.chen">
+            <img src="linkedin.png" alt="image">
+        </a>
+    </div>
+    <br><br><br><br><br><br>
+</body>
