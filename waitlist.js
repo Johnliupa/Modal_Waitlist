@@ -8,12 +8,12 @@ var app = express();
 const port = 3000;
 app.set('view engine', 'ejs');
 
-var mongo = "mongodb://localhost:27017/waitlist";
-const db = mongoose.connect(mongo, { useUnifiedTopology: true, useNewUrlParser: true }, function(err){
-    if(err){
-        console.log(err);
-    }
-});
+// var mongo = "mongodb://localhost:27017/waitlist";
+// const db = mongoose.connect(mongo, { useUnifiedTopology: true, useNewUrlParser: true }, function(err){
+//     if(err){
+//         console.log(err);
+//     }
+// });
 app.use(
     session({
       secret: 'secret',
