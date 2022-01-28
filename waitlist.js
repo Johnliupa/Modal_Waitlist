@@ -37,6 +37,7 @@ app.get('/success', function(req, res) {
 })
 
 app.post('/signup', async function(req, res) {
+    console.log(req.body.email)
     const csvWriter = createCsvWriter({
     path: 'email.csv',
     header: [
