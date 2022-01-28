@@ -5,7 +5,7 @@ const session = require('express-session');
 const flash = require('connect-flash');
 var user = require('./models/userModel')
 var app = express();
-const port = 3000;
+// const port = 3000;
 app.set('view engine', 'ejs');
 
 // var mongo = "mongodb://localhost:27017/waitlist";
@@ -49,5 +49,4 @@ app.post('/signup', async function(req, res) {
     })
 })
 
-app.listen(port, () => {
-})
+app.listen(process.env.PORT || 5000)
