@@ -28,11 +28,11 @@ app.use(flash());
 
 
 app.get('/', function(req, res) {
-    res.sendFile('/views/waitlist.html');
+    res.sendFile('views/waitlist.html');
 });
 
 app.get('/success', function(req, res) {
-    res.sendFile('/views/success.html');
+    res.sendFile('views/success.html');
 })
 
 app.post('/signup', async function(req, res) {
