@@ -36,7 +36,7 @@ app.get('/success', function(req, res) {
     res.render('success');
 })
 
-app.post('/signup', async function(req, res) {
+app.post('/signup', function(req, res) {
     console.log(req.body.email)
     const csvWriter = createCsvWriter({
     path: 'email.csv',
