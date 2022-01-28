@@ -6,7 +6,7 @@ const flash = require('connect-flash');
 var user = require('./models/userModel')
 var app = express();
 // const port = 3000;
-app.set('view engine', 'html');
+app.set('view engine', 'ejs');
 
 // var mongo = "mongodb://localhost:27017/waitlist";
 // const db = mongoose.connect(mongo, { useUnifiedTopology: true, useNewUrlParser: true }, function(err){
@@ -28,11 +28,11 @@ app.use(flash());
 
 
 app.get('/', function(req, res) {
-    res.sendFile('views/waitlist.html');
+    res.render('waitlist');
 });
 
 app.get('/success', function(req, res) {
-    res.sendFile('views/success.html');
+    res.render('success');
 })
 
 app.post('/signup', async function(req, res) {
