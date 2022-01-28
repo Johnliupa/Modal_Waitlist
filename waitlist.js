@@ -1,7 +1,6 @@
 const express = require('express')
 const mongoose = require('mongoose')
 const bodyParser = require('body-parser')
-const jwt = require('jsonwebtoken');
 const session = require('express-session');
 const flash = require('connect-flash');
 var user = require('./models/userModel')
