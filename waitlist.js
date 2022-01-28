@@ -6,6 +6,7 @@ const flash = require('connect-flash');
 var user = require('./models/userModel')
 var app = express();
 // const port = 3000;
+app.set('view engine', 'html');
 
 // var mongo = "mongodb://localhost:27017/waitlist";
 // const db = mongoose.connect(mongo, { useUnifiedTopology: true, useNewUrlParser: true }, function(err){
